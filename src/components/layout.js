@@ -25,7 +25,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} 
+      siteIcon ={data.site.siteMetadata.icons} 
+      siteBlog ={data.site.siteMetadata.blog}
+      siteAbout= {data.site.siteMetadata.about} 
+      siteSocial = {data.site.siteMetadata.soc}/>
       <div
         style={{
           margin: `0 auto`,
@@ -38,7 +42,8 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a> &nbsp;
+          by  &nbsp; <a  href="https://www.bamiogunfemi.codes">Bami Ogunfemi</a>
         </footer>
       </div>
     </>
