@@ -127,7 +127,7 @@ const Header = ({ siteTitle, siteIcon, siteBlog, siteAbout, siteSocial }) => (
             textDecoration: `none`,
           }}
         >
-          {siteIcon}
+          {siteSocial}
         </Link>
       </h2>
     </div>
@@ -142,7 +142,6 @@ Header.propTypes = {
   siteBlog: PropTypes.string,
  siteAbout: PropTypes.string,
  siteSocial: PropTypes.string,
-
 
 
 
